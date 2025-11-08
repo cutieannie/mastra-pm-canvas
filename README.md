@@ -69,7 +69,7 @@ By completing this workshop, you'll understand:
 ### Prerequisites
 
 - Node.js 18+
-- OpenAI API key
+- Google Gemini API key
 - Package manager (pnpm recommended)
 
 ### Setup
@@ -81,9 +81,9 @@ cd mastra-pm-canvas
 pnpm install
 ```
 
-2. **Add your OpenAI API key**:
+2. **Add your Gemini API key**:
 ```bash
-echo "OPENAI_API_KEY=your-key-here" >> .env
+echo "GOOGLE_GENERATIVE_AI_API_KEY=your-key-here" >> .env
 ```
 
 3. **Choose your starting point**:
