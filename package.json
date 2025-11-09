@@ -13,23 +13,40 @@
     "cli": "tsx src/cli/index.ts"
   },
   "dependencies": {
-    "@ag-ui/mastra": "0.0.10",
+    "@ag-ui/mastra": "0.2.0",
     "@ai-sdk/google": "^2.0.29",
-    "@copilotkit/react-core": "1.10.3",
-    "@copilotkit/react-ui": "1.10.3",
-    "@copilotkit/runtime": "1.10.3",
+    "@copilotkit/react-core": "1.10.6",
+    "@copilotkit/react-ui": "1.10.6",
+    "@copilotkit/runtime": "1.10.6",
     "@libsql/client": "^0.15.14",
-    "@mastra/client-js": "0.12.0",
-    "@mastra/core": "0.16.0",
-    "@mastra/libsql": "0.14.0",
-    "@mastra/memory": "0.14.4",
+    "@mastra/client-js": "1.0.0-beta.0",
+    "@mastra/core": "1.0.0-beta.0",
+    "@mastra/libsql": "1.0.0-beta.0",
+    "@mastra/memory": "1.0.0-beta.0",
     "dotenv": "^17.2.1",
     "libsql": "^0.5.13",
-    "mastra": "0.12.0",
+    "mastra": "1.0.0-beta.0",
     "next": ">=15.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "zod": "^3.24.4"
+    "zod": "^3.25.67"
+  },
+  "overrides": {
+    "@ag-ui/mastra": {
+      "@mastra/client-js": "1.0.0-beta.0",
+      "@mastra/core": "1.0.0-beta.0",
+      "@mastra/schema-compat": "1.0.0-beta.0"
+    },
+    "@mastra/client-js": {
+      "@mastra/core": "1.0.0-beta.0"
+    },
+    "@mastra/memory": {
+      "ai": "npm:ai@5.0.89"
+    },
+    "@mastra/core": {
+      "ai": "npm:ai@5.0.89",
+      "ai-v5": "npm:ai@5.0.89"
+    }
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
