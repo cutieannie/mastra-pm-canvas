@@ -9,7 +9,7 @@ import { systemPrompt } from "./systemPrompt";
 export const weatherAgent = new Agent({
   name: "Weather Agent",
   tools: { weatherTool },
-  model: google("gemini-2.5-flash"),
+  model: google("gemini-pro"),
   instructions: systemPrompt,
   memory: new Memory({
     storage: new LibSQLStore({ url: "file::memory:" }),
